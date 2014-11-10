@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent" android:weightSum="1">
+
+    <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:text="Дениши"
+            android:id="@+id/regionButtonDenyshy" android:layout_gravity="center_horizontal"
+            android:layout_weight="0.05"/>
+    <Button android:layout_width="200dp" android:layout_height="wrap_content" android:text="Скалы Довбуша"
+            android:id="@+id/regionButtonDovbush" android:layout_gravity="center_horizontal"
+            android:layout_weight="0.05"/>
+    <Button android:layout_width="200dp" android:layout_height="wrap_content" android:text="Южноукраинск"
+            android:id="@+id/regionButtonYuzhnoukrainsk" android:layout_gravity="center_horizontal"
+            android:layout_weight="0.05"/>
+    <ImageButton
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/regionButtonSmth" android:layout_weight="0.05" android:src="@drawable/ic_launcher"
+            android:clickable="true" android:baselineAlignBottom="false" android:layout_gravity="center"/>
+    <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Here will be displayed the catalog of the whole rock climbong areas of Ukraine. Possible it will be expanded to the other countries"
+            android:id="@+id/textView" android:layout_gravity="center_horizontal" android:layout_weight="0.69"/>
+</LinearLayout>
