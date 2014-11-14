@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">ClimbCatalog</string>
+    <string name="regionmenu_routeslist_title"><b>Название маршрута</b></string>
+    <string name="regionmenu_routeslist_complexity"><b>Сложность</b></string>
+    <string name="regionmenu_routeslist_points">Количество точек</string>
 </resources>

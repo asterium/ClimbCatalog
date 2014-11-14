@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="massiv_A">
+        <item>Остров Пасхи</item>
+        <item>Red Bull</item>
+        <item>Гошка</item>
+        <item>Мокрая щель</item>
+        <item>Женская балда (левая)</item>
+        <item>Мужская балда (центр)</item>
+        <item>Правая балда</item>
+        <item>Пробка</item>
+        <item>Бутылка</item>
+        <item>Блин</item>
+        <item>Авангард</item>
+        <item>Семерка</item>
+        <item>Шлямбурка</item>
+        <item>Косая щель</item>
+        <item>Киль</item>
+        <item>Правый киль</item>
+        <item>Мания величия</item>
+        <item>Всему свое время</item>
+        <item>Книжка</item>
+        <item>Ежик</item>
+        <item>Ежик</item>
+        <item>Ежик</item>
+        <item>Ежик</item>
+        <item>Ежик</item>
+        <item>Ежик</item>
+        <item>Ежик</item>
+        <item>Ежик</item>
+        <item>Ежик</item>
+    </string-array>
+    <string-array name="massiv_B">
+        <item>Старик</item>
+    </string-array>
+    <string-array name="massiv_С">
+        <item>Скунс</item>
+        <item>Печень врага</item>
+        <item>Говорун</item>
+        <item>Белая ворона</item>
+        <item>Без обид</item>
+        <item>Вдох</item>
+        <item>Пауза</item>
+        <item>Медленный</item>
+        <item>Выдох</item>
+        <item>Чебурашка</item>
+        <item>Январь 2005</item>
+        <item>Розвалюха</item>
+    </string-array>
+    <string-array name="massiv_D">
+        <item>Загогулина</item>
+        <item>Трембита</item>
+        <item>Мольфар</item>
+        <item>Чугайстер</item>
+    </string-array>
+</resources>
