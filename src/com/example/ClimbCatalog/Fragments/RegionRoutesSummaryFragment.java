@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.*;
 import com.example.ClimbCatalog.R;
+import com.example.ClimbCatalog.Helpers.Helper;
 
 
 /**
@@ -19,10 +20,10 @@ public class RegionRoutesSummaryFragment extends android.support.v4.app.Fragment
     Context context = getActivity();
 
     private TableRow createRouteRow(String name, String complexity, String points) {
+        int textPadding = Helper.convertDpToPixel(1, getActivity().getApplicationContext());
         TableRow row = new TableRow(getActivity());
         row.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
         row.setBackgroundColor(Color.WHITE);
-//
 
         LinearLayout titleContainer = new LinearLayout(getActivity());
         LinearLayout.LayoutParams titleLayoutParams = new TableRow.LayoutParams(0, LinearLayout.LayoutParams.MATCH_PARENT, 0.58f);
@@ -31,6 +32,7 @@ public class RegionRoutesSummaryFragment extends android.support.v4.app.Fragment
         titleContainer.setLayoutParams(titleLayoutParams);
         titleContainer.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
         TextView routeTitle = new TextView(getActivity());
+        routeTitle.setPadding(0,textPadding,0,textPadding);
         routeTitle.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
         routeTitle.setText(name);
         titleContainer.addView(routeTitle);
@@ -46,8 +48,8 @@ public class RegionRoutesSummaryFragment extends android.support.v4.app.Fragment
         TextView routeComplexity = new TextView(getActivity());
         routeComplexity.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
         routeComplexity.setText(complexity);
+        routeComplexity.setPadding(0,textPadding,0,textPadding);
         complexityContainer.addView(routeComplexity);
-
 
         LinearLayout pointsContainer = new LinearLayout(getActivity());
         LinearLayout.LayoutParams pointsLayoutParams = new TableRow.LayoutParams(0, LinearLayout.LayoutParams.MATCH_PARENT, 0.2f);
@@ -59,7 +61,7 @@ public class RegionRoutesSummaryFragment extends android.support.v4.app.Fragment
         TextView routePoints = new TextView(getActivity());
         routePoints.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
         routePoints.setText(points);
-
+        routePoints.setPadding(0,textPadding,0,textPadding);
         pointsContainer.addView(routePoints);
 
         row.addView(titleContainer);
@@ -85,28 +87,20 @@ public class RegionRoutesSummaryFragment extends android.support.v4.app.Fragment
         dataContainer.addView(createRouteRow("Название маршрута", "Сложность", "Количество точек"));
 
         ScrollView routeList = new ScrollView(getActivity());
-        routeList.setBackgroundColor(Color.RED);
+//        routeList.setBackgroundColor(Color.RED);
         routeList.setLayoutParams(new ScrollView.LayoutParams(ScrollView.LayoutParams.MATCH_PARENT,ScrollView.LayoutParams.MATCH_PARENT));
 
-//        TableRow scrollViewContainer = new TableRow(getActivity());
-//        scrollViewContainer.setBackgroundColor(Color.GREEN);
-//        TableRow.LayoutParams vclayoutParams = new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.MATCH_PARENT);
-//        vclayoutParams.setMargins(1, 1, 1, 1);
-//        scrollViewContainer.setLayoutParams(vclayoutParams);
 
         TableLayout routeListData = new TableLayout(getActivity());
-        routeListData.setBackgroundColor(Color.YELLOW);
+//        routeListData.setBackgroundColor(Color.YELLOW);
         routeListData.setLayoutParams(new TableLayout.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableLayout.LayoutParams.MATCH_PARENT));
 
         for (String routeName : routes) {
             routeListData.addView(createRouteRow(routeName, "8C", Integer.toString(8)));
         }
-        routeListData.addView(createRouteRow("AAAAAAAAAAAAAA", "8C", Integer.toString(8)));
+
         routeList.addView(routeListData);
-//        scrollViewContainer.addView(routeList);
-//        dataContainer.addView(scrollViewContainer);
         dataContainer.addView(routeList);
-        // Inflate the layout for this fragment
 
         return regionRoutesTab;
     }
