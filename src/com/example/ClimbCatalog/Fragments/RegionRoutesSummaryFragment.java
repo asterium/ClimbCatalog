@@ -83,17 +83,16 @@ public class RegionRoutesSummaryFragment extends android.support.v4.app.Fragment
         View regionRoutesTab = inflater.inflate(R.layout.region_routes_fragment, container, false);
         TableLayout dataContainer = (TableLayout) regionRoutesTab.findViewById(R.id.routesDataContainer);
 
-//        TableRow row = createRouteRow("Название маршрута", "Сложность", "Количество точек");
         dataContainer.addView(createRouteRow("Название маршрута", "Сложность", "Количество точек"));
 
         ScrollView routeList = new ScrollView(getActivity());
-//        routeList.setBackgroundColor(Color.RED);
         routeList.setLayoutParams(new ScrollView.LayoutParams(ScrollView.LayoutParams.MATCH_PARENT,ScrollView.LayoutParams.MATCH_PARENT));
 
 
         TableLayout routeListData = new TableLayout(getActivity());
-//        routeListData.setBackgroundColor(Color.YELLOW);
         routeListData.setLayoutParams(new TableLayout.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableLayout.LayoutParams.MATCH_PARENT));
+
+
 
         for (String routeName : routes) {
             routeListData.addView(createRouteRow(routeName, "8C", Integer.toString(8)));

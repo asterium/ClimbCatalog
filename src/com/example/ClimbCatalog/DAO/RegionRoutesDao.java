@@ -4,6 +4,8 @@ import android.content.Context;
 import android.content.res.Resources;
 import android.content.res.TypedArray;
 import com.example.ClimbCatalog.Models.Region;
+import com.example.ClimbCatalog.Models.RockArray;
+import com.example.ClimbCatalog.Models.Route;
 import com.example.ClimbCatalog.R;
 
 import java.util.ArrayList;
@@ -23,23 +25,18 @@ public class RegionRoutesDao {
     public List<String> getArraysForRegion(Region region){
         String regionTitle = region.getTitle();
         Resources res = context.getResources();
+        String[] results;
         if(regionTitle == "Denyshy") {
-            TypedArray ta = res.obtainTypedArray(R.array.regionDenyshy);
-            int n = ta.length();
-            String[][] array = new String[n][];
-            for (int i = 0; i < n; ++i) {
-                int id = ta.getResourceId(i, 0);
-                if (id > 0) {
-                    array[i] = res.getStringArray(id);
-                } else {
-                    // something wrong with the XML
-                }
-            }
-            System.out.println(Arrays.toString(array));
-            ta.recycle(); // Important!
+            results = res.getStringArray(R.array.regionArraysDenyshy);
         }
-return new ArrayList<String>();
+        else{
+            results = new String[1];
+        }
+    return Arrays.asList(results);
     }
 
-
+    public List<Route> getRoutesForArray(RockArray array){
+        String array_title = array.getTitle();
+        if(array_title == "A"){}
+    }
 }
