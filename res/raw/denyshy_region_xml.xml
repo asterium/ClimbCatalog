@@ -1,0 +1,267 @@
+<region name="Denyshy">
+    <array name="A">
+        <route name="OstrovPashi">
+            <title>Остров Пасхи</title>
+            <complexity>7a</complexity>
+            <points>6</points>
+            <array>A</array>
+        </route>
+
+        <route name="RedBull">
+            <title>Red Bull</title>
+            <complexity>6a</complexity>
+            <points>0</points>
+            <array>A</array>
+        </route>
+
+        <route name="Goshka">
+            <title>Гошка</title>
+            <complexity>6a+</complexity>
+            <points>0</points>
+            <array>A</array>
+        </route>
+
+        <route name="MokrayaShel">
+            <title>Мокрая щель</title>
+            <complexity>5a</complexity>
+            <points>9</points>
+            <array>A</array>
+        </route>
+
+        <route name="LevayaBalda">
+            <title>Левая Балда</title>
+            <complexity>6а+</complexity>
+            <points>7</points>
+            <array>A</array>
+        </route>
+
+        <route name="CentrBalda">
+            <title>Центральная Балда</title>
+            <complexity>6c</complexity>
+            <points>6</points>
+            <array>A</array>
+        </route>
+
+        <route name="PravayaBalda">
+            <title>Правая Балда</title>
+            <complexity>_???</complexity>
+            <points>0</points>
+            <array>A</array>
+        </route>
+
+        <route name="Probka">
+            <title>Пробка</title>
+            <complexity>5a+</complexity>
+            <points>10</points>
+            <array>A</array>
+        </route>
+
+        <route name="Butylka">
+            <title>Бутылка</title>
+            <complexity>5а+</complexity>
+            <points>7</points>
+            <array>A</array>
+        </route>
+
+        <route name="Blin">
+            <title>Блин</title>
+            <complexity>5а</complexity>
+            <points>8</points>
+            <item>A</item>
+        </route>
+
+        <route name="Avangard">
+            <title>Авангард</title>
+            <complexity>5b</complexity>
+            <points>8</points>
+            <array>A</array>
+        </route>
+
+        <route name="Semerka">
+            <title>Семерка</title>
+            <complexity>6а</complexity>
+            <points>8</points>
+            <array>A</array>
+        </route>
+
+        <route name="Shlyamburka">
+            <title>Шлямбурка</title>
+            <complexity>6b</complexity>
+            <points>8</points>
+            <array>A</array>
+        </route>
+
+        <route name="Motocykl">
+            <title>Мотоцикл</title>
+            <complexity>5c</complexity>
+            <points>0</points>
+            <array>A</array>
+        </route>
+
+        <route name="KosayaShel">
+            <title>Косая щель</title>
+            <complexity>6а+</complexity>
+            <points>7</points>
+            <array>A</array>
+        </route>
+
+        <route name="Kil">
+            <title>Киль</title>
+            <complexity>6b+</complexity>
+            <points>7</points>
+            <array>A</array>
+        </route>
+
+        <route name="PravyiKil">
+            <title>Правый киль</title>
+            <complexity>6b</complexity>
+            <points>7</points>
+            <array>A</array>
+        </route>
+
+        <route name="ManiyaVelichia">
+            <title>Мания величия</title>
+            <complexity>6c+</complexity>
+            <points>7</points>
+            <array>A</array>
+        </route>
+
+        <route name="VsemuSvoeVremya">
+            <title>Всему свое время</title>
+            <complexity>6c</complexity>
+            <points>0</points>
+            <array>A</array>
+        </route>
+
+        <route name="Ezhik">
+            <title>Ежик</title>
+            <complexity>6b</complexity>
+            <points>9</points>
+            <array>A</array>
+        </route>
+    </array>
+    <array name="B">
+        <route name="Starik">
+            <title></title>
+            <complexity>5a</complexity>
+            <points>0</points>
+            <array>B</array>
+        </route>
+    </array>
+    <array name="C">
+        <route name="Skuns">
+            <title>Скунс</title>
+            <complexity>5c</complexity>
+            <points>0</points>
+            <array>C</array>
+        </route>
+
+        <route name="PechenVraga">
+            <title>Печень врага</title>
+            <complexity>6a</complexity>
+            <points>0</points>
+            <array>C</array>
+        </route>
+
+
+        <route name="Govorun">
+            <title>Говорун</title>
+            <complexity>6a</complexity>
+            <points>0</points>
+            <array>C</array>
+        </route>
+
+        <route name="BelayaVorona">
+            <title>Белая ворона</title>
+            <complexity>6a</complexity>
+            <points>0</points>
+            <array>C</array>
+        </route>
+
+        <route name="BezObid">
+            <title>Без обид</title>
+            <complexity>6a</complexity>
+            <points>0</points>
+            <array>C</array>
+        </route>
+
+
+        <route name="Vdoh">
+            <title>Вдох</title>
+            <complexity>6c</complexity>
+            <points>0</points>
+            <array>C</array>
+        </route>
+
+        <route name="Pauza">
+            <title>Пауза</title>
+            <complexity>6b</complexity>
+            <points>0</points>
+            <array>C</array>
+        </route>
+
+        <route name="Medlennyi">
+            <title>Медленный</title>
+            <complexity>6a</complexity>
+            <points>0</points>
+            <array>C</array>
+        </route>
+
+        <route name="Vydoh">
+            <title>Выдох</title>
+            <complexity>6c</complexity>
+            <points>0</points>
+            <array>C</array>
+        </route>
+
+        <route name="Cheburashka">
+            <title>Чебурашка</title>
+            <complexity>6a</complexity>
+            <points>0</points>
+            <array>C</array>
+        </route>
+
+        <route name="January2005">
+            <title>Январь 2005</title>
+            <complexity>6a</complexity>
+            <points>0</points>
+            <array>C</array>
+        </route>
+
+        <route name="Rozvalyuha">
+            <title>Розвалюха</title>
+            <complexity>6a</complexity>
+            <points>0</points>
+            <array>C</array>
+        </route>
+    </array>
+    <array name="D">
+        <route name="Reinkarnaciya">
+            <title>Реинкарнация</title>
+            <complexity>6a+</complexity>
+            <points>0</points>
+            <array>D</array>
+        </route>
+
+        <route name="Trembita">
+            <title>Трембита</title>
+            <complexity>6b</complexity>
+            <points>0</points>
+            <array>D</array>
+        </route>
+
+        <route name="Molfar">
+            <title>Мольфар</title>
+            <complexity>6c+</complexity>
+            <points>0</points>
+            <array>D</array>
+        </route>
+
+        <route name="Chugaister">
+            <title>Чугайстер</title>
+            <complexity>6b</complexity>
+            <points>0</points>
+            <array>D</array>
+        </route>
+    </array>
+</region>

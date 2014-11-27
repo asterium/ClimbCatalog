@@ -8,8 +8,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.*;
-import com.example.ClimbCatalog.R;
+import com.example.ClimbCatalog.DAO.RegionRoutesDao;
 import com.example.ClimbCatalog.Helpers.Helper;
+import com.example.ClimbCatalog.Models.Region;
+import com.example.ClimbCatalog.Models.RockArray;
+import com.example.ClimbCatalog.Models.Route;
+import com.example.ClimbCatalog.R;
 
 
 /**
@@ -70,6 +74,29 @@ public class RegionRoutesSummaryFragment extends android.support.v4.app.Fragment
         return row;
     }
 
+    private TableRow createTitleRow(String name) {
+        int textPadding = Helper.convertDpToPixel(1, getActivity().getApplicationContext());
+        TableRow row = new TableRow(getActivity());
+        row.setLayoutParams(new TableRow.LayoutParams(TableRow.LayoutParams.MATCH_PARENT, TableRow.LayoutParams.WRAP_CONTENT));
+        row.setBackgroundColor(Color.WHITE);
+
+        LinearLayout titleContainer = new LinearLayout(getActivity());
+        LinearLayout.LayoutParams titleLayoutParams = new TableRow.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+        titleLayoutParams.setMargins(1, 1, 1, 1);
+        titleContainer.setBackgroundColor(Color.BLACK);
+        titleContainer.setLayoutParams(titleLayoutParams);
+        titleContainer.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
+        TextView routeTitle = new TextView(getActivity());
+        routeTitle.setPadding(textPadding,textPadding,textPadding,textPadding);
+        routeTitle.setGravity(Gravity.CENTER_VERTICAL | Gravity.CENTER_HORIZONTAL);
+        routeTitle.setText(name);
+        titleContainer.addView(routeTitle);
+
+        row.addView(titleContainer);
+        return row;
+    }
+
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -93,10 +120,18 @@ public class RegionRoutesSummaryFragment extends android.support.v4.app.Fragment
         routeListData.setLayoutParams(new TableLayout.LayoutParams(TableLayout.LayoutParams.MATCH_PARENT, TableLayout.LayoutParams.MATCH_PARENT));
 
 
+        RegionRoutesDao daoObject = new RegionRoutesDao(getActivity());
+        Region r = daoObject.getRegionDataByName("Denyshy");
+        for(RockArray array : r.getArrays()){
+            routeListData.addView(createTitleRow("Массив" + array.getTitle()));
 
-        for (String routeName : routes) {
-            routeListData.addView(createRouteRow(routeName, "8C", Integer.toString(8)));
+            for(Route route : array.getRoutes()){
+                routeListData.addView(createRouteRow(route.getTitle(), route.getComplexity(), Integer.toString(route.getPoints())));
+            }
         }
+//        for (String routeName : routes) {
+//            routeListData.addView(createRouteRow(routeName, "8C", Integer.toString(8)));
+//        }
 
         routeList.addView(routeListData);
         dataContainer.addView(routeList);

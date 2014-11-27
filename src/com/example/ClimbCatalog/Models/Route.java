@@ -16,6 +16,13 @@ public class Route {
         this.arrayTitle = arrayTitle;
     }
 
+    public Route(String title, String complexity, int points) {
+        this.title = title;
+        this.complexity = complexity;
+        this.points = points;
+        this.arrayTitle = "";
+    }
+
     public  Route(){
         this.title = "";
         this.complexity = "";
